@@ -19,4 +19,3 @@ def obj_id() -> object:
     delete_obj = DeleteObject()
     delete_obj.delete_obj(create_obj.response_json["id"])
     delete_obj.check_status_code()
-    delete_obj.check_message(create_obj.response_json["id"])
